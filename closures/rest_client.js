@@ -12,6 +12,6 @@ export const rest_client = (method) => (host) => (path) => async (optionalQueryP
         return result;
     }
     catch (error) {
-        throw error;
+        throw "The error thrown is " + error;
     }
 }

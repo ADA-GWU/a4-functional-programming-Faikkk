@@ -1,5 +1,7 @@
 import { rest_client } from "./rest_client.js";
 
+console.log("Please, provide the input. The query parameters at the end can be omitted.")
+console.log("Here is an example on execution (with spaces in between): node index.js GET https://jsonplaceholder.typicode.com users/ id=1&username=Bret")
 // taking user input
 const method = process.argv[2];
 const host = process.argv[3];

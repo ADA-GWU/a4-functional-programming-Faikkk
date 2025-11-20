@@ -10,10 +10,12 @@ GEM
     ruby2_keywords (0.0.5)
 
 PLATFORMS
-  ruby
+  universal-java-25
 
 DEPENDENCIES
-  faraday
+  base64 (= 0.3.0)
+  faraday (= 2.8.1)
+  faraday-net_http (= 3.0.2)
 
 BUNDLED WITH
-   1.17.2
+   2.7.2
