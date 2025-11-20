@@ -17,6 +17,14 @@ For Linux:<br>
 1. Open terminal and run `sudo apt update`, then `sudo apt install ruby-full`<br>
 2. `ruby-v` to check<br><br>
 
+Additional requirements for MacOS. Execute the following commands:<br>
+```
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+gem install bundler
+```
+
 #### Running the code
 To run the code, open the terminal, navigate to the local directory of your choice.<br><br>
 Then, execute the following commands, one by one.<br><br>
@@ -42,7 +50,8 @@ cd ..
 # navigate to currying directory
 cd currying
 
-bundle install
+
+bundle install --path vendor/bundle
 
 #execute each time to provide input
 ruby main.rb 
