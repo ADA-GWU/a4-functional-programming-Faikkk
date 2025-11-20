@@ -9,7 +9,7 @@ For macOS:<br>
 
 For Windows:<br>
 1. Go here https://rubyinstaller.org/downloads/<br>
-2. Press on Download. Under the `With Devkit`, find suitable verson (usually, highlighted with bold text)<br>
+2. Under the `With Devkit`, find suitable verson (usually, highlighted with bold text)<br>
 3. Run installer -> Check "Add Ruby executables to PATH" -> finish<br>
 4. Open command line and type `ruby -v`<br><br>
 
