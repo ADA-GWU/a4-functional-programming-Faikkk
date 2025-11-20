@@ -9,8 +9,8 @@ For macOS:<br>
 
 For Windows:<br>
 1. Go here https://rubyinstaller.org/downloads/<br>
-2. Press on Download. Under the `With Devkit`, find suitable verson (usually, highlighted with bold text)<br>
-3. Run installer -> Check "Add Ruby executables to PATH" -> finish<br>
+2. Under the `With Devkit`, find suitable verson (usually, highlighted with bold text)<br>
+3. Run installer (More info -> Run anyway) -> Check "Add Ruby executables to PATH" and "Associate .rb ...." -> finish<br>
 4. Open command line and type `ruby -v`<br><br>
 
 For Linux:<br>
@@ -26,19 +26,23 @@ Multiple sample inputs are given for your convenience:<br>
 ```
 git clone https://github.com/ADA-GWU/a4-functional-programming-Faikkk.git
 
+cd a4-functional-programming-Faikkk
 # navigate to closures directory
 cd closures
 
 # enter your input after `node index.js`
 
 # can execute either with or without the query parameters
-node index.js GET https://jsonplaceholder.typicode.com users/ id=1&username=Bret
-node index.js GET https://jsonplaceholder.typicode.com users/
-
+# NOTE: the quotes are required for the program to work correctly using windows terminal; works without them on mac
+node index.js "GET" "https://jsonplaceholder.typicode.com" "users/" "id=1&username=Bret"
+node index.js "GET" "https://jsonplaceholder.typicode.com" "users/"
+ 
 cd ..
 
 # navigate to currying directory
 cd currying
+
+bundle install
 
 ruby main.rb
 
