@@ -2,7 +2,7 @@ require 'faraday'
 
 # take the user input
 puts("Please, provide the input. The query parameters at the end can be omitted.")
-puts("Here is an example (with spaces in between): GET https://jsonplaceholder.typicode.com users id=1")
+puts("Here is an example (with spaces in between): GET https://jsonplaceholder.typicode.com users/ id=1")
 
 method, url, path, raw_params= gets.split
 
