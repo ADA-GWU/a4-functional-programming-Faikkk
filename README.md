@@ -44,9 +44,12 @@ cd currying
 
 bundle install
 
-ruby main.rb
+#execute each time to provide input
+ruby main.rb 
 
 GET https://jsonplaceholder.typicode.com users/ id=1&username=Bret
+
+ruby main.rb
 
 GET https://jsonplaceholder.typicode.com users/
 ```
